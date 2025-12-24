@@ -31,6 +31,8 @@ Param(
 
 $imagesDeleted = 0
 
+az login
+
 if ($SubscriptionName){
     Write-Host "Setting subscription to: $SubscriptionName"
     az account set --subscription $SubscriptionName
@@ -73,4 +75,5 @@ for($index=2; $index -lt $RepoList.length; $index++){
 
 write-host ""
 Write-Host "ACR cleanup completed"
+
 write-host "Total images deleted:"$imagesDeleted
