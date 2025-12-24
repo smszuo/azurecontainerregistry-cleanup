@@ -12,7 +12,6 @@ These instructions will allow you to run the PowerShell script. The script can e
 
 ## Prerequisites
 * You need to have Azure CLI and PowerShell installed on the machine, where you are running the script
-* Before running the script ensure you're logged into Azure using the **az login** cmdlet
 
 ## Parameters
 * **AzureRegistryName** (required) - provide the name of the target Azure Container Registry
@@ -41,3 +40,4 @@ In this case, script will delete any surplus images within the "yourrepositoryna
 
 ## Dockerfile
 Add a Dockerfile to build and run this script inside a Docker container. We use the Azure CLI container and pull in the Power Shell cross platform binaries.
+
