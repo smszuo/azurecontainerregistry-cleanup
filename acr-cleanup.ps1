@@ -31,7 +31,7 @@ Param(
 
 $imagesDeleted = 0
 
-az login
+az login --identity
 
 if ($SubscriptionName){
     Write-Host "Setting subscription to: $SubscriptionName"
@@ -77,3 +77,4 @@ write-host ""
 Write-Host "ACR cleanup completed"
 
 write-host "Total images deleted:"$imagesDeleted
+
